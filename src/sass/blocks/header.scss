@@ -10,7 +10,12 @@
 
     & .lead{
 
-      font-size: 30px;
+      font-size: 35px;
+      font-family: 'Acme', sans-serif;
+    }
+
+    & h1{
+      font-family: 'Lobster', cursive;
     }
   }
 }
