@@ -65,7 +65,7 @@
   <!-- Start of main section -->
   <div class="main-section">
     <div class="container">
-      <div class="row">
+      <div class="row mb-4">
 
         <!-- Start of main-left section (sidebar) -->
         <div class="col-3">
@@ -133,31 +133,32 @@
           </div>
 
           <!-- Pagination -->
-          <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-              <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Previous</a>
-              </li>
-              <li class="page-item activegit">
-                <a class="page-link" href="#">1</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">3</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-              </li>
-            </ul>
-          </nav>
-
+          <div class="pagination-wrapper">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- End of pagination components -->
         </div>
         <!-- End of main-middle section (content) -->
 
-        <!-- Start of right section -->
-
+        <!-- Start of right section (list block) -->
         <div class="col-3">
           <div class="list-group-wrapper">
             <div class="list-group mb-4">
@@ -170,7 +171,8 @@
               <button type="button" class="list-group-item list-group-item-action">Some news 4</button>
             </div>
           </div>
-          
+          <!-- Eng of right section(list block) -->
+
           <!-- Badges section -->
           <h3>Tags cloud</h3>
           <div class="badge-wrapper mb-4 bg-white">
@@ -191,7 +193,9 @@
             <a href="#" class="badge badge-dark">Stars</a>
             <a href="#" class="badge badge-dark">Running</a>
           </div>
+          <!-- End of badge section-->
 
+          <!-- Right sidebar (Photo section) -->
           <h3>Photos</h3>
           <div class="photo-wrapper bg-white">
             <div class="row no-gutters">
@@ -203,27 +207,49 @@
               </div>
             </div>
             <div class="row no-gutters">
-                <div class="col-6">
-                  <img class="img-fluid" src="./img/jpg/gallery-3.jpg" alt="right-photo">
-                </div>
-                <div class="col-6">
-                  <img class="img-fluid" src="./img/jpg/gallery-4.jpg" alt="right-photo">
-                </div>
+              <div class="col-6">
+                <img class="img-fluid" src="./img/jpg/gallery-3.jpg" alt="right-photo">
               </div>
-              <div class="row no-gutters">
-                  <div class="col-6">
-                    <img class="img-fluid" src="./img/jpg/gallery-5.jpg" alt="right-photo">
-                  </div>
-                  <div class="col-6">
-                    <img class="img-fluid" src="./img/jpg/gallery-6.jpg" alt="right-photo">
-                  </div>
-                </div>  
+              <div class="col-6">
+                <img class="img-fluid" src="./img/jpg/gallery-4.jpg" alt="right-photo">
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-6">
+                <img class="img-fluid" src="./img/jpg/gallery-5.jpg" alt="right-photo">
+              </div>
+              <div class="col-6">
+                <img class="img-fluid" src="./img/jpg/gallery-6.jpg" alt="right-photo">
+              </div>
+            </div>
           </div>
-          <!-- End of right section -->
-
+          <!-- End of right (Photo section) -->
         </div>
+          <!-- End of right section -->
       </div>
     </div>
+
+    <!-- Start of footer section -->
+    <footer class="footer bg-dark text-light">
+      <div class="container">
+        <div class="row d-flex justify-content-center pt-4">
+          <div class="col-4 text-center">
+            <h3>Traveler's Blog</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur minus dolorem voluptatibus, repellendus - voluptatibus, olos conrlor
+              </p>
+          </div>
+          <div class="col-4 text-center">
+            <h3>Contacts</h3>
+            <address>
+              <b>Twitter, Int</b>
+              <br> 1255 Market St, Suite 900
+              <br> San Francisco, CA 94103
+              <br> P: (123) 456-7890
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 
 </html>
