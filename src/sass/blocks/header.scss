@@ -5,4 +5,13 @@
   text-align: center;
   color: $white;
   margin-bottom: 20px;
+
+  & .container{
+
+    & .lead{
+
+      font-size: 30px;
+    }
+  }
 }
+
