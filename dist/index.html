@@ -7,21 +7,27 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Lobster" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-  <title>Template</title>
+  <title>FreeSpace</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <!-- Beginning navigation section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
+
+      <!-- Logo component -->
       <a class="navbar-brand" href="#">
         <img src="./img/png/logo.png" alt="logo">
       </a>
+
+      <!-- Menu components-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -36,21 +42,230 @@
             <a class="nav-link" href="#">Places</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">Contacts</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-dark my-2 my-sm-0 border border-light" type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
-  <header class="header">
+  <!-- Eng of navigation section -->
+
+  <!-- Beginning header section -->
+  <header class="header d-flex flex-column justify-content-center align-item-center">
     <div class="container">
-      <h1 class="display-1">Never stop dreaming</h1>
+      <h1 class="display-1">Your own free space</h1>
+      <p class="lead">be creative & stay creative</p>
     </div>
   </header>
+  <!-- End of header section -->
+
+  <!-- Beginning main section -->
+  <div class="main-section">
+    <div class="container">
+      <div class="row mb-4">
+
+        <!-- Beginning left section (left sidebar) -->
+        <!-- Card component -->
+        <div class="col-3">
+          <div class="card mb-4">
+            <img class="card-img-top" src="./img/jpg/author.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">About me</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <!-- "Subscribe" component -->
+          <h3>Subscribe</h3>
+          <div class="subscribe">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <button type="submit" class="btn btn-dark btn-block">Submit</button>
+            </form>
+          </div>
+        </div>
+        <!-- End of left section (left sidebar) -->
+
+        <!-- Beginning middle section (content) -->
+        <!-- Card components -->
+        <div class="col-6">
+          <div class="card mb-4">
+            <img class="card-img-top" src="./img/jpg/photo-1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Post title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur distinctio obcaecati saepe nemo quas
+                ipsam earum assumenda non quaerat, maxime quae officia, dolorum impedit aut dignissimos pariatur accusantium
+                accusamus culpa!</p>
+              <button class="btn btn-dark">Read more</button>
+              <p class="card-text">
+                <small class="text-muted">Last updated 20 hours ago</small>
+              </p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <img class="card-img-top" src="./img/jpg/photo-2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Post title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur distinctio obcaecati saepe nemo quas
+                ipsam earum assumenda non quaerat, maxime quae officia, dolorum impedit aut dignissimos pariatur accusantium
+                accusamus culpa!</p>
+              <button class="btn btn-dark">Read more</button>
+              <p class="card-text">
+                <small class="text-muted">Last updated 1 day ago</small>
+              </p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <img class="card-img-top" src="./img/jpg/photo-3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Post title</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur distinctio obcaecati saepe nemo quas
+                ipsam earum assumenda non quaerat, maxime quae officia, dolorum impedit aut dignissimos pariatur accusantium
+                accusamus culpa!</p>
+              <button class="btn btn-dark">Read more</button>
+              <p class="card-text">
+                <small class="text-muted">Last updated 2 days mins ago</small>
+              </p>
+            </div>
+          </div>
+
+          <!-- Beginning pagination component-->
+          <div class="pagination-wrapper">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- End of pagination component -->
+        </div>
+        <!-- End of main-middle section (content) -->
+
+        <!-- Beginning right section (right sidebar) -->
+        <!-- List component -->
+        <div class="col-3">
+          <h3>News</h3>
+          <div class="list-group-wrapper">
+            <div class="list-group mb-4">
+              <button type="button" class="list-group-item list-group-item-action active bg-dark border border-dark">
+                Active news
+              </button>
+              <button type="button" class="list-group-item list-group-item-action">Another info 1</button>
+              <button type="button" class="list-group-item list-group-item-action">Another info 2</button>
+              <button type="button" class="list-group-item list-group-item-action">Another info 3</button>
+              <button type="button" class="list-group-item list-group-item-action">Another info 4</button>
+            </div>
+          </div>
+          <!-- Eng of right section (right sidebar) -->
+
+          <!-- Badges component -->
+          <h3>Tags cloud</h3>
+          <div class="badge-wrapper mb-4 bg-white">
+            <a href="#" class="badge badge-dark">Advantures</a>
+            <a href="#" class="badge badge-dark">Photos</a>
+            <a href="#" class="badge badge-dark">Travel</a>
+            <a href="#" class="badge badge-dark">Wanderlust</a>
+            <a href="#" class="badge badge-dark">Trip</a>
+            <a href="#" class="badge badge-dark">GetAway</a>
+            <a href="#" class="badge badge-dark">Tourist</a>
+            <a href="#" class="badge badge-dark">Instagram</a>
+            <a href="#" class="badge badge-dark">Hostels</a>
+            <a href="#" class="badge badge-dark">Monuments</a>
+            <a href="#" class="badge badge-dark">Bear</a>
+            <a href="#" class="badge badge-dark">Nature</a>
+            <a href="#" class="badge badge-dark">Ocean</a>
+            <a href="#" class="badge badge-dark">Space</a>
+            <a href="#" class="badge badge-dark">Stars</a>
+            <a href="#" class="badge badge-dark">Running</a>
+          </div>
+          <!-- End of badge component-->
+
+          <!-- Beginning photo components -->
+          <h3>Photos</h3>
+          <div class="photo-wrapper bg-white">
+            <div class="row no-gutters">
+              <div class="col-6">
+                <img class="img-fluid" src="./img/jpg/gallery-1.jpg" alt="right-photo">
+              </div>
+              <div class="col-6">
+                <img class="img-fluid" src="./img/jpg/gallery-2.jpg" alt="right-photo">
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-6">
+                <img class="img-fluid" src="./img/jpg/gallery-3.jpg" alt="right-photo">
+              </div>
+              <div class="col-6">
+                <img class="img-fluid" src="./img/jpg/gallery-4.jpg" alt="right-photo">
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-6">
+                <img class="img-fluid" src="./img/jpg/gallery-5.jpg" alt="right-photo">
+              </div>
+              <div class="col-6">
+                <img class="img-fluid" src="./img/jpg/gallery-6.jpg" alt="right-photo">
+              </div>
+            </div>
+          </div>
+          <!-- End of photo components -->
+        </div>
+        <!-- End of right section -->
+      </div>
+    </div>
+
+    <!-- Beginning footer section -->
+    <footer class="footer bg-dark text-light">
+      <div class="container">
+        <div class="row d-flex justify-content-center pt-4">
+          <div class="col-4 text-center">
+            <h3>Traveler's Blog</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur minus dolorem voluptatibus, repellendus
+              - voluptatibus, olos conrlor
+            </p>
+          </div>
+          <div class="col-4 text-center">
+            <h3>Contacts</h3>
+            <address>
+              <b>Twitter, Int</b>
+              <br> 1255 Market St, Suite 900
+              <br> San Francisco, CA 94103
+              <br> P: (123) 456-7890
+            </address>
+          </div>
+        </div>
+        <!-- Copyright component -->
+        <div class="copyright-wrapper mt-4">
+          <img class="mx-auto d-block"src="./img/png/logo.png" alt="copyLogo">
+          <p class="text-center mt-3">Built with all the love in the world by @stanislav</p>
+        </div>
+      </div>
+    </footer>
 </body>
 
 </html>
