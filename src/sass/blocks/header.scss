@@ -5,13 +5,17 @@
   text-align: center;
   color: $white;
   margin-bottom: 20px;
-  & .container {
-    & .lead {
+  
+  .container {
+    
+    .lead {
       font-size: 35px;
       font-family: 'Acme', sans-serif;
     }
-    & h1 {
+     h1 {
       font-family: 'Lobster', cursive;
     }
+    
   }
+  
 }
